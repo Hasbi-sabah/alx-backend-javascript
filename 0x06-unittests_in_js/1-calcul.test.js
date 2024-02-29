@@ -20,6 +20,8 @@ describe('calculateNumber', () => {
     })
     it('DIVIDE', () => {
         assert.equal(calculateNumber('DIVIDE', 1.3, 0), "Error");
+        assert.equal(calculateNumber('DIVIDE', 0, 0), "Error");
+        assert.equal(calculateNumber('DIVIDE', 0, 0.2), "Error");
         assert.equal(calculateNumber('DIVIDE', 0, 1.2), 0);
         assert.equal(calculateNumber('DIVIDE', 1.3, 1.3), 1);
         assert.equal(calculateNumber('DIVIDE', 1.7, 1.2), 2);
