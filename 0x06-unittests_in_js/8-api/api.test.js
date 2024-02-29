@@ -1,5 +1,4 @@
 const { expect } = require('chai')
-const app = require('./api')
 const request = require('request')
 
 describe('server test', () => {
